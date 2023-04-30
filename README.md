@@ -11,8 +11,6 @@ For everything else, please use the Discord linked above.
 
 ## Innstallation & Contribution 🛠️
 
----
-
 This repo uses [packwiz](https://github.com/packwiz/packwiz) which primarily makes it so you don't need the jar files for the mods, instead it uses TOML files which either Curseforge or Modrinth can utilize to download the modpack.<br>
 [Official packwiz tutorial on exporting the pack](https://packwiz.infra.link/tutorials/hosting/curseforge/)
 
@@ -24,7 +22,6 @@ If you have any questions regarding this, feel free to ask me on Discord, which 
 
 ## Documentation 📃
 
----
 
 This pack heavily utilizes [KubeJS](https://github.com/KubeJS-Mods/KubeJS) to change recipes and add custom items which play a big role in the progression in the modpack.
 
@@ -36,7 +33,6 @@ Recipes and all custom items are also in the KubeJS folder, and any changes will
 
 ## File Structure 📦
 
----
 
 Just a quick guide for locating all of the important files and folders.
 
