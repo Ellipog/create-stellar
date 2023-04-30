@@ -1,0 +1,13 @@
+name = "Builder's Delight (Forge)"
+filename = "BuildersDelight-1.19.2-v.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "032437b06c99fae1e02d475f36afcf5b9383a736"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4362665
+project-id = 563734

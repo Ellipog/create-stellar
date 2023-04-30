@@ -1,0 +1,13 @@
+name = "Re-chiseled"
+filename = "rechiseled-1.0.13-forge-mc1.19.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "03c811730aef6777d69d7d7d0c1f1af31d05ea66"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4498523
+project-id = 558998

@@ -1,0 +1,11 @@
+name = "Stellar R"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "37dd90abab8806a93d5258c290ac11413151d287bdeb34a32f8236d7e617a621"
+
+[versions]
+forge = "43.2.8"
+minecraft = "1.19.2"
