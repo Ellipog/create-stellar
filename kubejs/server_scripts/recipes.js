@@ -621,7 +621,6 @@ ServerEvents.recipes((event) => {
   event.remove({ output: "mysticalagriculture:essence_vessel" });
   event.remove({ output: "ad_astra:calorite_tank" });
   event.remove({ output: "ad_astra:calorite_engine" });
-  event.remove({ output: "ad_astra:ostrum_engine" });
   event.remove({ output: "minecraft:iron_nugget", output: "minecraft:flint", input: "minecraft:gravel" });
 
   event.replaceInput({}, "thermal:redstone_servo", "kubejs:conductive_mechanism");
@@ -2905,14 +2904,6 @@ ServerEvents.recipes((event) => {
     B: "#forge:plates/calorite",
     C: "minecraft:bucket",
     D: "#forge:rods/iron",
-  });
-
-  // Plates/Ostrum, Ostrum Mechanism, Engine Frame, Engine Fan = Ostrum Engine
-  event.shaped(Item.of("ad_astra:ostrum_engine"), ["ABA", " C ", " D "], {
-    A: "ad_astra:ostrum_plate",
-    B: "kubejs:ostrum_mechanism",
-    C: "ad_astra:engine_frame",
-    D: "ad_astra:engine_fan",
   });
 
   // Plates/Calorite, Calorite Mechanism, Engine Frame, Engine Fan = Calorite Engine
