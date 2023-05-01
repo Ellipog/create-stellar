@@ -1,7 +1,7 @@
 # Create: Stellar 🌃
 
 [![](https://img.shields.io/discord/834791723305009162?label=DISCORD&logo=discord&style=for-the-badge&color=blue)](https://discord.gg/stellar-834791723305009162)
-[![](https://img.shields.io/badge/Curseforge-Stellar-orange?style=for-the-badge&logo=curseforge)](https://discord.gg/stellar-834791723305009162)
+[![](https://img.shields.io/badge/Curseforge-Stellar-orange?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/minecraft/modpacks/create-stellar)
 
 Github repo for the **Create: Stellar** modpack
 
