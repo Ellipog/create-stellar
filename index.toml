@@ -3115,6 +3115,11 @@ hash = "994a0ed956fadb078234026da6cad7172a5520deaefecb27bc4bb11e3450c011"
 metafile = true
 
 [[files]]
+file = "mods/shutup-experimental-settings.pw.toml"
+hash = "97fecd322567a954ea537e61feb6e0f848f307790d2e8a155af427c5910a4a4d"
+metafile = true
+
+[[files]]
 file = "mods/slice-and-dice.pw.toml"
 hash = "b19f7d5da268c4d26bcc2227735fe26b7d89ac5325e0f56a56fa4ffe9f34aa72"
 metafile = true
