@@ -803,10 +803,10 @@ ServerEvents.recipes((event) => {
         type: "create:filling",
         ingredients: [
           {
-            item: "kubejs:incomplete_steel_mechanism",
+            item: "kubejs:basic_mechanism",
           },
           {
-            amount: 60,
+            amount: 30,
             fluid: "createbigcannons:molten_steel",
           },
         ],
