@@ -622,6 +622,7 @@ ServerEvents.recipes((event) => {
   event.remove({ output: "ad_astra:calorite_tank" });
   event.remove({ output: "ad_astra:calorite_engine" });
   event.remove({ output: "minecraft:iron_nugget", output: "minecraft:flint", input: "minecraft:gravel" });
+  event.remove({ output: "biomesoplenty:black_sand", output: "minecraft:glass" });
 
   event.replaceInput({}, "thermal:redstone_servo", "kubejs:conductive_mechanism");
   event.replaceInput({}, "thermal:rf_coil", "kubejs:conductive_mechanism");
@@ -2493,7 +2494,7 @@ ServerEvents.recipes((event) => {
     C: "kubejs:steel_mechanism",
     D: "minecraft:crafting_table",
     E: "minecraft:redstone_block",
-    F: "ad_astra:steel_block",
+    F: "#forge:storage_blocks/steel",
   });
 
   // Plates/Steel, Bucket, Steel Mechanism = Fuel Refinery
