@@ -622,7 +622,6 @@ ServerEvents.recipes((event) => {
   event.remove({ output: "ad_astra:calorite_tank" });
   event.remove({ output: "ad_astra:calorite_engine" });
   event.remove({ output: "minecraft:iron_nugget", output: "minecraft:flint", input: "minecraft:gravel" });
-  event.remove({ input: "biomesoplenty:black_sand", output: "minecraft:glass" });
 
   event.replaceInput({}, "thermal:redstone_servo", "kubejs:conductive_mechanism");
   event.replaceInput({}, "thermal:rf_coil", "kubejs:conductive_mechanism");
@@ -2347,9 +2346,6 @@ ServerEvents.recipes((event) => {
   // Gravel into Flint
   event.blasting("minecraft:flint", "minecraft:gravel");
 
-  // Black Sand into Coal
-  event.blasting("minecraft:coal", "biomesoplenty:black_sand");
-
   // Cinder Flour into Redstone
   event.blasting("minecraft:redstone", "create:cinder_flour");
 
@@ -3040,6 +3036,9 @@ ServerEvents.recipes((event) => {
 
   // Item, 9 Blue Ice into Blizz Cube
   compacting(false, "minecraft:blue_ice", 1, "thermal:blizz_rod", 1);
+
+  // Item, 1 Black Sand into Coal
+  compacting(false, "biomesoplenty:black_sand", 1, "minecraft:coal", 1);
 
   // Heated, 50mb Heavy Oil into Solid Fuel Clump
   event.custom({

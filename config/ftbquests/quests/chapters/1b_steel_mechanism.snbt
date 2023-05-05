@@ -175,7 +175,7 @@
 			icon: "minecraft:coal"
 			x: 0.0d
 			y: -0.5d
-			description: ["Blasting black sand will melt it completely and only leave coal. "]
+			description: ["Compacting black sand will smash it completely and only leave coal. "]
 			dependencies: ["0D98E4DE75721518"]
 			id: "0DD923DD5C53AE2D"
 			tasks: [
