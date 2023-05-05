@@ -725,23 +725,6 @@ ServerEvents.recipes((event) => {
     loops: 1,
     sequence: [
       {
-        type: "create:filling",
-        ingredients: [
-          {
-            item: "kubejs:incomplete_steel_mechanism",
-          },
-          {
-            amount: 30,
-            fluid: "kubejs:molten_copper",
-          },
-        ],
-        results: [
-          {
-            item: "kubejs:incomplete_steel_mechanism",
-          },
-        ],
-      },
-      {
         type: "create:deploying",
         ingredients: [
           {
@@ -752,6 +735,23 @@ ServerEvents.recipes((event) => {
               item: "thermal:copper_gear",
             },
           ],
+        ],
+        results: [
+          {
+            item: "kubejs:incomplete_copper_mechanism",
+          },
+        ],
+      },
+      {
+        type: "create:filling",
+        ingredients: [
+          {
+            item: "kubejs:incomplete_copper_mechanism",
+          },
+          {
+            amount: 30,
+            fluid: "kubejs:molten_copper",
+          },
         ],
         results: [
           {
@@ -803,7 +803,7 @@ ServerEvents.recipes((event) => {
         type: "create:filling",
         ingredients: [
           {
-            item: "kubejs:basic_mechanism",
+            item: "kubejs:incomplete_steel_mechanism",
           },
           {
             amount: 30,
