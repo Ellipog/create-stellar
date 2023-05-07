@@ -153,7 +153,7 @@
 			icon: "kubejs:molten_brass_bucket"
 			x: -5.0d
 			y: 3.0d
-			description: ["Mix molten iron and molten zinc in a basin. "]
+			description: ["Mix molten copper and molten zinc in a basin. "]
 			dependencies: [
 				"1D79A6A4E0507638"
 				"012BCFE977B090AE"
