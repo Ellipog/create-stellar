@@ -1900,7 +1900,7 @@ ServerEvents.recipes((event) => {
   let raw = [
     { item: "iron", namespace: "minecraft" },
     { item: "gold", namespace: "minecraft" },
-    { item: "copper", namespace: "create" },
+    { item: "copper", namespace: "minecraft" },
     { item: "zinc", namespace: "create" },
     { item: "desh", namespace: "ad_astra" },
     { item: "ostrum", namespace: "ad_astra" },
