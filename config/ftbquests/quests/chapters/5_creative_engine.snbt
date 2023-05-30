@@ -3,7 +3,7 @@
 	group: "5D483904BEF9BD19"
 	order_index: 11
 	filename: "5_creative_engine"
-	title: "5) Creative Engine"
+	title: "5) Creative Mechanism"
 	icon: "kubejs:creative_mechanism"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
