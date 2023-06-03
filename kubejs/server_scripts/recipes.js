@@ -2940,16 +2940,16 @@ ServerEvents.recipes((event) => {
   // Splashing
 
   // Orange Sand into Copper Nuggets
-  splashing("biomesoplenty:orange_sand", "create:copper_nugget", 0.25, 1, "create:copper_nugget", 0.08, 1);
+  splashing("biomesoplenty:orange_sand", "create:copper_nugget", 1, 1, "create:copper_nugget", 0.25, 1);
 
   // Rose Quartz into Polished Rose Quartz
   splashing("create:rose_quartz", "create:polished_rose_quartz", 1, 1);
 
   // Moon Sand into Desh Nuggets
-  splashing("ad_astra:moon_sand", "ad_astra:desh_nugget", 0.25, 1, "ad_astra:desh_nugget", 0.08, 1);
+  splashing("ad_astra:moon_sand", "ad_astra:desh_nugget", 0.1, 1, "ad_astra:desh_nugget", 0.25, 1);
 
   // Gravel into Flint and Iron Nugget
-  splashing("minecraft:gravel", "minecraft:flint", 0.25, 1, "minecraft:iron_nugget", 0.25, 1);
+  splashing("minecraft:gravel", "minecraft:flint", 0.25, 1, "minecraft:iron_nugget", 0.1, 1);
 
   // Splashing
   //
