@@ -1,13 +1,13 @@
 name = "Farmer's Delight"
-filename = "FarmersDelight-1.19-1.2.0.jar"
+filename = "FarmersDelight-1.19.2-1.2.3.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "3052ebc183aaca383b8df1862fb924f63eae39f0"
+hash = "a55ca7720cd4142a146c6ad4309aa79c646eeec5"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 3999157
+file-id = 4679318
 project-id = 398521

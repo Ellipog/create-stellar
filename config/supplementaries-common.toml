@@ -75,7 +75,10 @@
 [functional]
 	fodder = true
 	hourglass = true
-	present = true
+
+	[functional.present]
+		enabled = true
+		trapped_present = true
 
 	[functional.rope]
 		enabled = true
@@ -318,13 +321,13 @@
 		#Arrow stacks that can fit inside a quiver. Requires reboot
 		#Range: 1 ~ 9
 		slots = 6
-		#Increase this number to alter the probability for a Skeleton with quiver to spawn. Note that this also depends on local difficulty so you wont ever see them on easy and very rarely on normal. Similar logic to equipment
-		#Range: 0.0 ~ 1.0
-		quiver_skeleton_chance = 0.2
 		#Allows quiver to only be used when in offhand or in curio slot
 		only_works_in_curio = false
 		#Arrows you pickup will try to go in a quiver if available provided it has some arrow of the same type
 		quiver_pickup = true
+		#Increase this number to alter the probability for a Skeleton with quiver to spawn. Note that this also depends on local difficulty so you wont ever see them on easy and very rarely on normal. Similar logic to equipment
+		#Range: 0.0 ~ 1.0
+		quiver_skeleton_spawn_chance = 0.025
 
 	[tools.bubble_blower]
 		enabled = true
@@ -502,8 +505,21 @@
 		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
 		#Best kept disabled if you are adding custom adventurer maps with datapack (check the wiki for more)
 		random_adventurer_maps = true
-		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
+		#Enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
 		block_map_markers = true
+		#If Quark is installed adventurer maps will be replaced by adventurer quills. These will not lag the server when generating
+		quill_adventurer_maps = true
+		#If Quark is installed replaces buried treasure and mansion maps with their equivalent quill form. This removes the lag spike they create when generating
+		quill_vanilla_maps = true
+		#These maps will roll a difference structure every time. Increase their price to balance them
+		#Range: 1.0 ~ 10.0
+		map_trade_price_multiplier = 2.0
+		#These maps will roll a difference structure every time. Decrease their max trades to balance them
+		#Range: 1 ~ 12
+		map_trade_max_trades = 2
+		#Increases any search done with a quoll to be at least this radius. Vanilla locate is 100 while buried treasure is 50 chunks for reference
+		#Range: 0 ~ 500
+		minimum_search_radius = 100
 
 	[tweaks.ceiling_banners]
 		#Allow banners to be placed on ceilings
@@ -531,4 +547,8 @@
 		rideable_underwater = true
 		#Convert a zombie horse back by feeding it a golden carrot
 		zombie_horse_inverse_conversion = true
+
+	[tweaks.dye_blocks]
+		#Allows using dyes on blocks just like soap
+		enabled = false
 

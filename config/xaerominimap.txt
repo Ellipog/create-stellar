@@ -1,5 +1,5 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:353
+ignoreUpdate:369
 settingsButton:false
 allowWrongWorldTeleportation:false
 differentiateByServerAddress:true
@@ -62,7 +62,7 @@ zoomOnEnlarged:0
 minimapTextAlign:0
 waypointsMutualEdit:true
 compassLocation:1
-compassScale:1
+compassDirectionScale:0
 caveMapsDepth:30
 hideWaypointCoordinates:false
 renderAllSets:false
@@ -102,7 +102,8 @@ switchToAutoOnDeath:true
 infoDisplayBackgroundOpacity:40
 caveModeToggleTimer:1000
 legibleCaveMaps:false
-displayPacPlayers:true
+biomeBlending:true
+displayTrackedPlayers:true
 displayClaims:true
 displayCurrentClaim:true
 claimsFillOpacity:46
