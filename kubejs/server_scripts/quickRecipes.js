@@ -69,7 +69,7 @@ ServerEvents.recipes(event=>{
         .keepIngredient("create:wrench")
         //appending "manual_only" means this recipe can't be automated. it's strictly
         //for player convenience, and no production line should depend on it.
-        .id(`kubejs:uncraft_${Item.of(output).id}_${Item.of(input).id}_manual_only`)
+        .id(`kubejs:uncraft_${Item.of(output).id.replace(":","_")}_${Item.of(input).id.replace(":","_")}_manual_only`)
     }
   }
 
