@@ -530,14 +530,8 @@ ServerEvents.recipes((event) => {
   event.remove({ output: "createsifter:sifter", type: "crafting_shaped" });
   event.remove({ output: "createaddition:rolling_mill", type: "crafting_shaped" });
   event.remove({ output: "thermal:slag" });
-  event.remove({ output: "create:spout" });
   event.remove({ output: "create_enchantment_industry:printer" });
   event.remove({ output: "ad_astra:iron_rod" });
-  event.remove({ output: "create:fluid_tank", type: "crafting_shaped" });
-  event.remove({ output: "create:hose_pulley", type: "crafting_shaped" });
-  event.remove({ output: "create:item_drain", type: "crafting_shaped" });
-  event.remove({ output: "create:smart_fluid_pipe", type: "crafting_shaped" });
-  event.remove({ output: "create:fluid_valve", type: "crafting_shapeless" });
   event.remove({ output: "create_enchantment_industry:disenchanter", type: "crafting_shaped" });
   event.remove({ output: "ad_astra:tier_1_rocket" });
   event.remove({ output: "ad_astra:tier_2_rocket" });
@@ -559,11 +553,6 @@ ServerEvents.recipes((event) => {
   event.remove({ output: "ad_astra:water_pump" });
   event.remove({ output: "create:steam_engine" });
   event.remove({ output: "create:extendo_grip" });
-  event.remove({ output: "create:brass_funnel" });
-  event.remove({ output: "create:brass_tunnel" });
-  event.remove({ output: "create:andesite_funnel" });
-  event.remove({ output: "create:andesite_tunnel" });
-  event.remove({ output: "create:belt_connector" });
   event.remove({ output: "prettypipes:pressurizer" });
   event.remove({ output: "prettypipes:item_terminal" });
   event.remove({ output: "prettypipes:crafting_terminal" });
@@ -869,6 +858,29 @@ ServerEvents.recipes((event) => {
       item: "kubejs:incomplete_steel_mechanism",
     },
   });
+
+
+   // alternate molten mixing recipe. commented til it gets some go-ahead
+   /* event.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        amount: 100,
+        fluid: "kubejs:molten_brass",
+      },
+      {
+        item: "kubejs:basic_mechanism",
+      },
+      {
+        item: "create:electron_tube",
+      },
+    ],
+    results: [
+      {
+        item: "create:precision_mechanism",
+      },
+    ],
+  }); */
 
   // Precision Mechanism, Base = Basic Mechanism, 1x Deploying Brass Sheet, 1x Deploying Electron Tube, 1x Deploying Brass Nugget, 1x Pressing
   event.custom({
@@ -2438,26 +2450,10 @@ ServerEvents.recipes((event) => {
     .shaped(Item.of("4x thermal:rubber"), ["AAA", "ABA", "AAA"], { A: "#minecraft:logs_that_burn", B: "minecraft:water_bucket" })
     .replaceIngredient("minecraft:water_bucket", "minecraft:water_bucket");
 
-  // Copper Mechanism, Cured Rubber = Spout
-  event.shaped(Item.of("create:spout"), ["A", "B"], { A: "kubejs:copper_mechanism", B: "thermal:cured_rubber" });
 
   // Copper Mechanism, Cured Rubber, Plates/Iron = Printer
   event.shaped(Item.of("create_enchantment_industry:printer"), ["A", "B", "C"], { A: "kubejs:copper_mechanism", B: "thermal:cured_rubber", C: "#forge:plates/iron" });
 
-  // Plates/Copper, Copper Mechanism, Barrel = Fluid Tank
-  event.shaped(Item.of("create:fluid_tank"), ["ABA", "ACA", "ABA"], { A: "#forge:plates/copper", B: "kubejs:copper_mechanism", C: "minecraft:barrel" });
-
-  // Copper Mechanism, Dried Kelp Block, Plates/Copper = Hose Pulley
-  event.shaped(Item.of("create:hose_pulley"), ["B", "C", "A"], { A: "#forge:plates/copper", B: "kubejs:copper_mechanism", C: "minecraft:dried_kelp_block" });
-
-  // Iron Bars, Copper Mechanism = Item Drain
-  event.shaped(Item.of("create:item_drain"), ["B", "A"], { A: "kubejs:copper_mechanism", B: "minecraft:iron_bars" });
-
-  // Plates/Gold, Fluid Pipe, Copper Mechanism = Smart Fluid Pipe
-  event.shaped(Item.of("create:smart_fluid_pipe"), ["A", "B", "C"], { A: "#forge:plates/gold", B: "create:fluid_pipe", C: "kubejs:copper_mechanism" });
-
-  // Plates/Iron, Fluid Pipe, Copper Mechanism = Fluid Valve
-  event.shaped(Item.of("create:fluid_valve"), ["A", "B", "C"], { A: "#forge:plates/iron", B: "create:fluid_pipe", C: "kubejs:copper_mechanism" });
 
   // Sandpaper, Copper Casing, Copper Mechanism = Disenchanter
   event.shaped(Item.of("create_enchantment_industry:disenchanter"), ["C", "A", "B"], { A: "create:copper_casing", B: "kubejs:copper_mechanism", C: "#create:sandpaper" });
@@ -2533,20 +2529,7 @@ ServerEvents.recipes((event) => {
   // Plates/Gold, Engine, Copper Block = Steam Engine
   event.shaped(Item.of("create:steam_engine"), ["A", "B", "C"], { A: "#forge:plates/gold", B: "immersive_aircraft:engine", C: "minecraft:copper_block" });
 
-  // Electron Tube, Precision Mechanism, Cured Rubber = Brass Funnel
-  event.shaped(Item.of("create:brass_funnel"), ["A", "B", "C"], { A: "create:electron_tube", B: "create:precision_mechanism", C: "thermal:cured_rubber" });
-
-  // Electron Tube, Precision Mechanism, Cured Rubber = Brass Tunnel
-  event.shaped(Item.of("create:brass_tunnel"), ["AA", "BB", "CC"], { A: "create:electron_tube", B: "create:precision_mechanism", C: "thermal:cured_rubber" });
-
-  // Basic Mechanism, Cured Rubber = Andesite Funnel
-  event.shaped(Item.of("create:andesite_funnel"), ["A", "B"], { A: "kubejs:basic_mechanism", B: "thermal:cured_rubber" });
-
-  // Basic Mechanism, Cured Rubber = Andesite Tunnel
-  event.shaped(Item.of("create:andesite_tunnel"), ["AA", "BB"], { A: "kubejs:basic_mechanism", B: "thermal:cured_rubber" });
-
-  // Cured Rubber = Mechanical Belt
-  event.shaped(Item.of("create:belt_connector"), ["AAA"], { A: "thermal:cured_rubber" });
+  
 
   // Precision Mechanism, High Speed Module, Redstone Block = Pipe Pressurizer
   event.shaped(Item.of("prettypipes:pressurizer"), ["ABA", "DCD", "ABA"], {
